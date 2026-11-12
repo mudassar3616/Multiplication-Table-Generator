@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Table Generator</h1>
+            <p>Generate any multiplication table instantly!</p>
+        </div>
+
+        <div class="input-group">
+            <label for="number">Enter Your Number</label>
+            <input
+                type="number"
+                id="number"
+                placeholder="Example: 5"
+                step="any"
+            >
+        </div>
+
+        <div class="buttons">
+            <button class="generate-btn" onclick="generateTable()">
+                Generate Table
+            </button>
+
+            <button class="clear-btn" onclick="clearTable()">
+                Clear
+            </button>
+        </div>
+
+        <p id="message" class="message"></p>
+
+        <div id="result" class="result hidden">
+            <h2 id="table-heading">Your Table</h2>
+            <div id="table-output"></div>
+        </div>
+
+        <div class="footer">
+            Built with HTML, CSS & JavaScript
+        </div>
+
+    </div>
+
+    
+    <script src="/function.js"></script>
+
+</body>
+</html>
